@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url('./images/img-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.title h1 {
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: 1.5;
+}
+
+.top-button {
+    border: 0;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.top-button:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.middle-content {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.middle-content .left {
+    width: 50%;
+}
+
+.middle-content .left div{
+    width: 300px;
+}
+
+.middle-content h1 {
+    font-size: 28px;
+}
+
+.middle-content h1, 
+.middle-content p,
+.lower-middle-content h1,
+.lower-middle-content p {
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.middle-button {
+    border: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 30px;    
+}
+
+.middle-button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.lower-middle-content {
+    display: flex;
+}
+
+.lower-middle-content .container {
+    background-color: #ffeedd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.lower-middle-content .container div {
+    width: 300px;
+}
+
+#testimonies {
+    height: 100vh;
+    background-color: #555555;
+}
+
+.testimonies-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.testimonies-content >h2 {
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.testimonies-content .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.testimonies-content .grid .grid-item {
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.testimonies-content .grid .grid-item img {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.testimonies-content .grid .grid-item h2 {
+    margin-bottom: 15px;
+}
+
+.testimonies-button {
+    margin-top: 50px;
+    border: 0;
+    background-color: #ffeedd;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.testimonies-button:hover {
+    background-color: #000000;
+    color: #ffeedd;
+}
+
+footer {
+    background-color: #ffeedd;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content h2 {
+    margin-bottom: 20px;
+}
+
+.footer-content h2, a {
+    color: #555555;
+}
+
+@media (max-width: 1024px) {
+    #top .banner {
+        height: auto;
+        background-size: 100%;
+        padding: 30px;
+    }
+
+    #top .content h1 {
+        font-size: 24px;
+    }
+
+    .middle-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .middle-content .left {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .middle-content .left >div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .middle-content .left p {
+        max-width: 100%;
+    }
+
+    .lower-middle-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lower-middle-content img {
+        width: 100%;
+    }
+
+    .lower-middle-content .container >div {
+        width: 100%;
+        padding: 30px;
+        text-align: center; 
+    }
+
+    #testimonies {
+        height: auto;
+    }
+
+    .testimonies-content {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .testimonies-content .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
